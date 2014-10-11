@@ -7,5 +7,11 @@ gem "middleman-blog", "~> 3.5.3"
 
 gem "middleman-gh-pages"
 
+gem 'bitters'
+gem 'bourbon'
+gem 'neat'
+
+gem 'redcarpet', github: 'vmg/redcarpet'
+
 # For feed.xml.builder
 gem "builder", "~> 3.0"

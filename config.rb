@@ -2,16 +2,16 @@
 # Blog settings
 ###
 
-# Time.zone = "UTC"
+Time.zone = "London"
 
 activate :blog do |blog|
   # This will add a prefix to all links, template references and source paths
-  # blog.prefix = "blog"
+  blog.prefix = "blog"
 
   # blog.permalink = "{year}/{month}/{day}/{title}.html"
   # Matcher for blog source files
   # blog.sources = "{year}-{month}-{day}-{title}.html"
-  # blog.taglink = "tags/{tag}.html"
+  blog.taglink = "tags/{tag}.html"
   # blog.layout = "layout"
   # blog.summary_separator = /(READMORE)/
   # blog.summary_length = 250
@@ -29,7 +29,19 @@ activate :blog do |blog|
   # blog.page_link = "page/{num}"
 end
 
-page "/feed.xml", layout: false
+activate :syntax
+
+activate :directory_indexes
+
+page "blog/feed.xml", layout: false
+
+set :markdown_engine, :redcarpet
+set :markdown, :layout_engine => :erb,
+               :fenced_code_blocks => true,
+               :tables => true,
+               :autolink => true,
+               :smartypants => true,
+               :with_toc_data => true
 
 ###
 # Compass
@@ -96,7 +108,9 @@ configure :build do
   # activate :asset_hash
 
   # Use relative URLs
-  # activate :relative_assets
+  activate :relative_assets
+  set :relative_links, true
+  set :relative_paths, true
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
