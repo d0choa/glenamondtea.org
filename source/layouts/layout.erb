@@ -10,9 +10,8 @@
     <%= feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed" %>
   </head>
   <body>
-    
+    <%= partial "partials/header" %>      
     <div id="main" role="main">
-      <%= partial "partials/nav" %>
       <%= yield %>
       <%= partial "partials/footer" %>
     </div>

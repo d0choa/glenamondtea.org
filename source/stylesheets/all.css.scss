@@ -5,6 +5,7 @@
 @import "neat";
 
 @import "partials/layout";
+@import "partials/webfonts";
 
 
 article.type-system-geometric {
@@ -21,12 +22,13 @@ article.type-system-geometric {
     padding: .3em 0;
     text-align: left;
     text-transform: uppercase;
+    margin-top: 35px;
   }
 
   h1 {
     font-family: $serif;
     font-size: 1.8em;
-    font-weight: 700;
+    font-weight: 400;
     margin-bottom: .5em;
 
     @include media($medium-screen) {
@@ -105,5 +107,53 @@ article.type-system-geometric {
 
   p.author {
     font-family: $sans-serif;
+  }
+}
+
+body {
+  margin:0px;
+}
+
+
+header {
+  @include clearfix;
+  background-color: $header-color;
+  margin-bottom: 30px;
+  a {
+    color: $header-text-color;
+    &:hover {
+      color: $alt-header-color2;
+      text-decoration: none;
+    }
+  }
+  h1 {
+    background: image-url($logo-img) no-repeat;
+    background-size: image-width($logo-img) image-height($logo-img);
+    font-size: 35px;
+    height: image-height($logo-img);
+    line-height: 1.4em;
+//    margin-top: 0 auto;
+    padding-top: 20px;
+    padding-left: image-width($logo-img) + 20px;
+    width: $header-width;
+
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      background-image: image-url($logo-img-2x);
+    }
+
+    a:hover {
+      color: $text-color;
+    }
+  }
+  nav {
+    li{
+      display: inline;
+    }
+    margin: -35px auto 0 auto;
+    padding-left: image-width($logo-img) + 20px;
+    width: $header-width;
+  }
+  .footer-only {
+    display: none;
   }
 }

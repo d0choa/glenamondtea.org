@@ -1,0 +1,42 @@
+@font-face {
+    font-family: 'EgyptianText-Regular';
+    src: url('../fonts/EgyptianText-Regular.woff') format('woff'),
+         url('../fonts/EgyptianText-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'EgyptianText-RegularItalic';
+    src: url('../fonts/EgyptianText-RegularItalic.woff') format('woff'),
+         url('../fonts/EgyptianText-RegularItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'EgyptianText-Medium';
+    src: url('../fonts/EgyptianText-Medium.woff') format('woff'),
+         url('../fonts/EgyptianText-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'EgyptianHeadline-Medium';
+    src: url('../fonts/EgyptianHeadline-Medium.woff') format('woff'),
+         url('../fonts/EgyptianHeadline-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'EgyptianHeadline-Light';
+    src: url('../fonts/EgyptianHeadline-Light.woff') format('woff'),
+         url('../fonts/EgyptianHeadline-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'EgyptianHeadline-Semibold-redux';
+    src: url('../fonts/EgyptianHeadline-Semibold-redux.woff') format('woff'),
+         url('../fonts/EgyptianHeadline-Semibold-redux.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
