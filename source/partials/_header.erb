@@ -1,10 +1,15 @@
-<header>
-  <div id="main" role="main">
-    <div class="container">
-      <h1>
-        <%= link_to "biocomplexity", "index.html", :class => 'blog-title' %>
-      </h1>
+
+<div class="home_header">
+  <div id="fb-root" style="display:none;"></div>
+  <div id="cover_wrap" class="fadeInDown animated clearfix">
+    <header id="masthead" class="clearfix">
+      <hgroup class="intro">
+        <h1>
+          <%= link_to "BioComplexity", "/index.html", :class => 'blog-title' %>
+          <span><a href="http://twitter.com/d0choa" rel="me" target="_blank">@d0choa</a></span>
+        </h1>
+      </hgroup>
       <%= partial "partials/nav" %>
-    </div>
+    </header>
   </div>
-</header>
+</div>

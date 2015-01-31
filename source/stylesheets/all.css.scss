@@ -67,10 +67,17 @@ article.type-system-geometric {
     margin-bottom: .4em;
   }
 
-  p.date {
+  .date {
     color: transparentize($base-font-color, .6);
     font-family: $serif;
     font-style: italic;
+    font-size: .9em;
+    margin-bottom: .3em;
+  }
+
+  p.byauthor {
+    color: transparentize($base-font-color, .6);
+    font-family: $serif;
     font-size: .9em;
     margin-bottom: .3em;
   }
@@ -110,50 +117,172 @@ article.type-system-geometric {
   }
 }
 
-body {
-  margin:0px;
+#masthead {
+    margin: 0 auto;
+    padding: 15px 0;
+    color: #57626b;
+    max-width: $header-width;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out
+}
+
+#masthead hgroup {
+    margin: 0;
+    float: left
+}
+
+#masthead hgroup h1 {
+    font-weight: 500;
+    line-height: 1.1;
+    margin: 0;
+    font-size: 1.1em
+}
+
+#masthead hgroup h1 a {
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 1.2em;
+    color: #669ecc
+}
+
+#masthead hgroup h1 a:hover {
+    color: #245f8f
+}
+
+#masthead hgroup h1 a.home {
+    color: #454e55 !important;
+    font-size: 1.1em;
+    font-weight: 500
+}
+
+#masthead hgroup h1 a.home:hover {
+    color: #1d78bd !important
+}
+
+#masthead hgroup h1 span a {
+    font-weight: 400;
+    font-size: .9rem;
+    color: #999
+}
+
+#masthead hgroup h1 span a:hover {
+    color: #1D78BD
+}
+
+#cover_wrap {
+    width: 100%;
+    padding: 0;
+    border-bottom: 1px solid #eee;
+}
+
+#cover {
+    float: right;
+    margin-top: .21em
+}
+
+#cover #headernav {
+    padding: 0
+}
+
+#cover #headernav li {
+    display: inline-block;
+    margin-right: 1.7em
+}
+
+#cover #headernav li:last-child {
+    margin-right: 0 !important
+}
+
+#cover #headernav li a {
+    color: #a6a8ab;
+    font-size: .95rem;
+    font-weight: 500;
+    position: relative;
+    z-index: 1
+}
+
+#cover #headernav li a svg {
+    margin-right: 3px;
+    margin-bottom: -1px;
+    fill: #a6a8ab !important
+}
+
+#cover #headernav li a svg circle, #cover #headernav li a svg path {
+    fill: #c0c2c4
+}
+
+#cover #headernav li a.posts svg {
+    margin-bottom: -3px
+}
+
+#cover #headernav li a.research svg {
+    margin-bottom: -3
+}
+
+#cover #headernav li a.selected, #cover #headernav li a:hover {
+    color: #1D78BD
+}
+
+#cover #headernav li a.selected svg, #cover #headernav li a:hover svg {
+    fill: #1d78bd !important
+}
+
+#cover #headernav li a.selected svg circle, #cover #headernav li a.selected svg path,
+#cover #headernav li a:hover svg circle, #cover #headernav li a:hover svg path {
+    fill: #1D78BD
+}
+
+#cover #headernav li a.selected:hover:before {
+    background-color: #38c;
+    width: 115%;
+    left: -.7em;
+    -webkit-transition: all 250ms cubic-bezier(0.325, 0, 0, 1);
+    -webkit-transition: all 250ms cubic-bezier(0.325, -.075, 0, 1.65);
+    -moz-transition: all 250ms cubic-bezier(0.325, -.075, 0, 1.65);
+    -o-transition: all 250ms cubic-bezier(0.325, -.075, 0, 1.65);
+    transition: all 250ms cubic-bezier(0.325, -.075, 0, 1.65)
+}
+
+#cover #headernav li a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: -1em;
+    padding: 0 .2em;
+    left: -.2em;
+    z-index: -1;
+    background-color: #1D78BD;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 300ms cubic-bezier(0.325, 0, 0, 1);
+    -webkit-transition: all 300ms cubic-bezier(0.325, -.075, 0, 1.65);
+    -moz-transition: all 300ms cubic-bezier(0.325, -.075, 0, 1.65);
+    -o-transition: all 300ms cubic-bezier(0.325, -.075, 0, 1.65);
+    transition: all 300ms cubic-bezier(0.325, -.075, 0, 1.65)
+}
+
+#cover #headernav li a.selected:before, #cover #headernav li a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1)
 }
 
 
-header {
-  @include clearfix;
-  background-color: $header-color;
-  margin-bottom: 30px;
-  a {
-    color: $header-text-color;
-    &:hover {
-      color: $alt-header-color2;
-      text-decoration: none;
-    }
-  }
-  h1 {
-    background: image-url($logo-img) no-repeat;
-    background-size: image-width($logo-img) image-height($logo-img);
-    font-size: 35px;
-    height: image-height($logo-img);
-    line-height: 1.4em;
-//    margin-top: 0 auto;
-    padding-top: 20px;
-    padding-left: image-width($logo-img) + 20px;
-    width: $header-width;
+#post ul.build-list li::after, #postex .photoset .photoset-col::after, #postex .photoset .photoset-row::after, #postex ul.build-list li::after, .clearfix::after, .photoset .photoset-col::after, .photoset .photoset-row::after{
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+  font-size: 0;
+  
+}
 
-    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-      background-image: image-url($logo-img-2x);
-    }
-
-    a:hover {
-      color: $text-color;
-    }
-  }
-  nav {
-    li{
-      display: inline;
-    }
-    margin: -35px auto 0 auto;
-    padding-left: image-width($logo-img) + 20px;
-    width: $header-width;
-  }
-  .footer-only {
-    display: none;
-  }
+// Design main
+section {
+  @include outer-container;
+  aside { @include span-columns(5); }
+  article { @include span-columns(7);@include omega();}
 }

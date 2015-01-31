@@ -1,8 +1,8 @@
 <% wrap_layout :layout do %>
   <article class="type-system-geometric">
-    <p class="type">Article Type</p>
+    <p class="type"><%= current_article.metadata[:page]['type'] %></p>
     <h1><%= current_article.title %></h1>
-    <p class="date"><%= current_article.date.strftime('%Y-%m-%d') %></p>
+    <p class="byauthor">By <%= current_article.metadata[:page]['author'] %> - <span class="date"><%= current_article.date.strftime('%Y-%m-%d') %></span></p>
     <%= yield %>
     <hr>
     <p class="author">
