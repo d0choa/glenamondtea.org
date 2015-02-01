@@ -126,6 +126,10 @@ article.type-system-geometric {
     transition: all .4s ease-in-out
 }
 
+#masthead #cover #headernav li.footer-only{
+  display:none;
+}
+
 #masthead hgroup {
     margin: 0;
     float: left
@@ -279,6 +283,7 @@ article.type-system-geometric {
   font-size: 0;
   
 }
+
 
 // Design main
 section {
