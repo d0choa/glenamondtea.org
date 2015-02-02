@@ -4,17 +4,16 @@ pageable: true
 per_page: 10
 ---
 
-
 <h1>Writing</h1>
 <p>My thoughts here and on social media are my own and not those of my employer or other organizations I participate in.</p>
 
 <ul>
   <% page_articles.each_with_index do |article, i| %>
     <li>
-      <h2><%= link_to article.title, article %></h2>
       <div class="article-details">
+        <h4><%= link_to article.title, article %></h4>
         <div class="article-date">
-          <%= article.date.strftime('%Y-%m-%d') %>
+          <%= article.date.strftime('%d-%m-%Y') %>
         </div>
         <% if article.data[:description] %>
           <div>
@@ -39,27 +38,3 @@ per_page: 10
   <% end %>
   </p>
 <% end %>
-
-<!-- <% if paginate && num_pages > 1 %>
-  <p>Page <%= page_number %> of <%= num_pages %></p>
-
-  <% if prev_page %>
-    <p><%= link_to 'Previous page', prev_page %></p>
-  <% end %>
-<% end %>
-
-<ul>
-  <% page_articles.each_with_index do |article, i| %>
-    <li>
-      <h3><%= link_to article.title, article %></h3>
-      <h5><%= article.date.strftime('%b %e') %></h5>
-      <p><%= article.body %></p>
-    </li>
-  <% end %>
-</ul>
-
-<% if paginate %>
-  <% if next_page %>
-    <p><%= link_to 'Next page', next_page %></p>
-  <% end %>
-<% end %> -->
