@@ -116,10 +116,19 @@ article.type-system-geometric {
   }
 }
 
+#main {
+  line-height: 1.5;
+  margin-top: 35px;
+}
+
+footer{
+  margin-top: 80px;
+}
+
 //Header style
 #masthead {
     margin: 0 auto;
-    padding: 15px 0;
+    padding: 10px 0;
     color: #57626b;
     -webkit-font-smoothing: antialiased;
     background-color: $base-background-color;
@@ -136,19 +145,19 @@ article.type-system-geometric {
             font-weight: 500;
             line-height: 1.1;
             margin: 0;
-            font-size: 1.1em;
+            font-size: 1.2em;
             a {
                 font-weight: 500;
                 cursor: pointer;
                 font-size: 1.2em;
-                color: #669ecc;
+                color: $header-color;
                 .home {
                     color: #454e55 !important;
                     font-size: 1.1em;
                     font-weight: 500;
                 }
                 .home:hover {
-                    color: #1d78bd !important;
+                    color: $header-color !important;
                 }
             }
             a:hover {
