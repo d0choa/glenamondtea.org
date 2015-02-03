@@ -13,15 +13,15 @@
     </li>
     
     <li>
-      <% link_to('/about.html', { :class => 'about'}) do %><%= partial "partials/about-ico.svg" %>About<% end %>
-    </li>
-    
-    <li>
       <% link_to('/blog.html', { :class => 'posts'}) do %><%= partial "partials/blog-ico.svg" %>Blog<% end %>
     </li>
   
     <li>
       <% link_to('/research.html', { :class => 'research'}) do %><%= partial "partials/research-ico.svg" %>Research<% end %>
-    </li>    
+    </li>
+    
+    <li>
+      <% link_to('/index.html', { :class => 'about'}) do %><%= partial "partials/about-ico.svg" %>About<% end %>
+    </li>
   </ul>
 </nav>
