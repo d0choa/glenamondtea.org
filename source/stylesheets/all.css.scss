@@ -292,8 +292,39 @@ footer{
           margin-right: 0 !important
       }      
   }
-  
 }
+
+#articleList{
+  .article{    
+    margin-top:20px;
+  }
+  .title{
+    font-size: $h4-font-size;
+    font-family: $serif;
+    font-weight: 400;
+    line-height: 1.3em;
+    margin-bottom: .2em;
+  }
+  .authors{
+    color: $base-font-color;
+    font-family: $serif;
+    font-size: .8em;
+//    margin-bottom: .2em;
+  }
+  .journal {
+    color: transparentize($base-font-color, .3);
+    font-family: $serif;
+    font-size: .9em;
+//    margin-bottom: .2em;
+  }
+  .doi{
+    font-size: .8em;
+  }
+  .author{
+    margin-right: 3px;
+  }
+}
+
 
 #post ul.build-list li::after, #postex .photoset .photoset-col::after, #postex .photoset .photoset-row::after, #postex ul.build-list li::after, .clearfix::after, .photoset .photoset-col::after, .photoset .photoset-row::after{
   clear: both;

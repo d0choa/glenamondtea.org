@@ -2,6 +2,16 @@
 # Blog settings
 ###
 
+require 'faraday'
+require 'faraday_middleware'
+require 'multi_xml'
+require 'yaml'
+require 'lib/middleman-orcid.rb'
+require 'bibtex'
+require 'crossref'
+require "lib/helpers"
+
+
 Time.zone = "London"
 
 activate :blog do |blog|
@@ -42,6 +52,23 @@ set :markdown, :layout_engine => :erb,
                :autolink => true,
                :smartypants => true,
                :with_toc_data => true
+
+# Middleman Orcid
+helpers Helpers
+activate :middleman_orcid, :data => data
+
+
+# paper = CR.doi('10.1021/ie50324a027')
+# doi = data.bibliography["orcid-activities"]["orcid-works"]["orcid-work"][1]["work-external-identifiers"]["work-external-identifier"].select{ |x| x["work-external-identifier-type"] = "DOI"}.first()["work-external-identifier-id"]["value"]
+
+# doi = data.bibliography["orcid-activities"]["orcid-works"]["orcid-work"][1]["work-external-identifiers"]["work-external-identifier"].select{|x| x["work-external-identifier-type"] == "DOI"}.first["work-external-identifier-id"]["value"]
+# CR = Crossref::Metadata.new(:pid => "dogcaesar@gmail.com")
+# paper = CR.doi(doi)
+#
+# puts paper.title
+ # bib = BibTeX.parse(data.bibliography["orcid-activities"]["orcid-works"]["orcid-work"][0]["work-citation"]["citation"])
+
+ 
 
 ###
 # Compass

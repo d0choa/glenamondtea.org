@@ -1,0 +1,27 @@
+
+<h1>Articles</h1>
+
+<div id="articleList">
+  <% data.bibliography.references.each do |f| %>
+    <div class="article">
+      <ul>
+          <li class="title"><%= link_to f.title , f.URL %></li>
+          <li class="authors">
+            <li class="authors">
+              <% f.author.each do |author| %>
+                <span class="author"> <%= author.family %>, <%= author.given[0,1] %>.</span>
+              <% end %>
+            </li>
+          </li>
+          <li class="journal">
+            <% if f["container-title"] %><span><%= f["container-title"] %></span><% end %>
+            <% if f["volume"] %><span><%= f["volume"] %></span><% end %>
+            <% if f["issue"] %><span>, <%= f["issue"] %></span><% end %>
+            <% if f["issued"]["date-parts"] %><span>(<%= f["issued"]["date-parts"].first.first %>)</span><% end %>
+            <% if f["page"] %><span>p. <%= f["page"] %></span><% end %>
+          </li>
+          <li class="doi"><%= link_to f.DOI , f.URL %></li>
+      </ul>
+    </div>
+  <% end %>
+</div>
