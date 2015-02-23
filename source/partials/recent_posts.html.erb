@@ -1,0 +1,21 @@
+<h3>Recent Posts</h3>
+
+<ul>
+  <% blog.articles[0...4].each do |article| %>
+  <li>
+    <div class="article-details">
+      <h4><%= link_to article.title, article %></h4>
+      <div class="article-date">
+        <%= article.date.strftime('%d-%m-%Y') %>
+      </div>
+      <% if article.data[:description] %>
+        <div>
+          <%= article.data[:description] %>
+        </div>
+      <% end %>
+    </div>    
+  </li>
+  <% end %>
+</ul>
+
+<%=link_to("more writing", '/blog.html') %>
