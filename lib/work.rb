@@ -57,9 +57,7 @@ class Work < BibTeX::Entry
       if work["publication-date"]["year"]["value"]
         entry.year = work["publication-date"]["year"]["value"]
       end
-      if record["journal"]["journal_issue"]["journal_volume"]["volume"]
-        entry.volume = record["journal"]["journal_issue"]["journal_volume"]["volume"]
-      end
+      entry.volume = record["journal"]["journal_issue"]["journal_volume"]["volume"]      
       if record["journal"]["journal_issue"]["issue"]
         entry.number = record["journal"]["journal_issue"]["issue"]
       end      
