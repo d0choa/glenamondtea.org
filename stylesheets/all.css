@@ -1,0 +1,684 @@
+@charset "UTF-8";
+/* Bitters 0.10.0
+ * http://bitters.bourbon.io
+ * Copyright 2013–2014 thoughtbot, inc.
+ * MIT License */
+/* line 1, /Users/dochoa/Sites/www/source/stylesheets/base/extends/_button.scss */
+button,
+input[type="submit"] {
+  -webkit-font-smoothing: antialiased;
+  background-color: #00548B;
+  border-radius: 3px;
+  color: white;
+  display: inline-block;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 1;
+  padding: 0.75em 1em;
+  text-decoration: none; }
+  /* line 13, /Users/dochoa/Sites/www/source/stylesheets/base/extends/_button.scss */
+  button:hover,
+  input[type="submit"]:hover {
+    background-color: #00263f;
+    color: white; }
+  /* line 18, /Users/dochoa/Sites/www/source/stylesheets/base/extends/_button.scss */
+  button:disabled,
+  input[type="submit"]:disabled {
+    cursor: not-allowed;
+    opacity: 0.5; }
+
+/* line 1, /Users/dochoa/Sites/www/source/stylesheets/base/_typography.scss */
+body {
+  -webkit-font-smoothing: antialiased;
+  margin: 0px;
+  padding: 0px;
+  background-color: white;
+  color: #333;
+  font-family: "EgyptianText-Regular", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-size: 1em; }
+
+/* line 11, /Users/dochoa/Sites/www/source/stylesheets/base/_typography.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "EgyptianHeadline-Medium";
+  line-height: 1.25;
+  margin: 0;
+  text-rendering: optimizeLegibility; }
+
+/* line 23, /Users/dochoa/Sites/www/source/stylesheets/base/_typography.scss */
+h1 {
+  font-size: 1.8em;
+  font-family: "EgyptianHeadline-Medium";
+  font-weight: 400;
+  margin-bottom: .5em;
+  margin-top: 1.2em; }
+
+/* line 31, /Users/dochoa/Sites/www/source/stylesheets/base/_typography.scss */
+h2 {
+  font-size: 1.2em;
+  font-family: "EgyptianHeadline-Medium";
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.4em;
+  margin-bottom: 1.1em; }
+
+/* line 40, /Users/dochoa/Sites/www/source/stylesheets/base/_typography.scss */
+h3 {
+  font-size: 1.4em;
+  font-family: "EgyptianHeadline-Medium";
+  font-weight: 400;
+  line-height: 1.3em;
+  margin-bottom: .4em;
+  margin-top: 0.8em; }
+
+/* line 49, /Users/dochoa/Sites/www/source/stylesheets/base/_typography.scss */
+h4 {
+  font-size: 1em;
+  font-family: "EgyptianHeadline-Medium";
+  font-weight: 400;
+  line-height: 1.3em;
+  margin-bottom: .4em; }
+
+/* line 58, /Users/dochoa/Sites/www/source/stylesheets/base/_typography.scss */
+h5 {
+  font-size: 1.25em; }
+
+/* line 62, /Users/dochoa/Sites/www/source/stylesheets/base/_typography.scss */
+h6 {
+  font-size: 1em; }
+
+/* line 66, /Users/dochoa/Sites/www/source/stylesheets/base/_typography.scss */
+p {
+  margin: 0 0 0.75em; }
+
+/* line 70, /Users/dochoa/Sites/www/source/stylesheets/base/_typography.scss */
+a {
+  -webkit-transition: color 0.1s linear;
+  -moz-transition: color 0.1s linear;
+  transition: color 0.1s linear;
+  color: #00548B;
+  text-decoration: none; }
+  /* line 75, /Users/dochoa/Sites/www/source/stylesheets/base/_typography.scss */
+  a:hover {
+    color: #00263f; }
+  /* line 79, /Users/dochoa/Sites/www/source/stylesheets/base/_typography.scss */
+  a:active, a:focus {
+    color: #00263f;
+    outline: none; }
+
+/* line 85, /Users/dochoa/Sites/www/source/stylesheets/base/_typography.scss */
+hr {
+  border-bottom: 1px solid #DDD;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  margin: 1.5em 0; }
+
+/* line 93, /Users/dochoa/Sites/www/source/stylesheets/base/_typography.scss */
+img,
+picture {
+  margin: 0;
+  max-width: 100%; }
+
+/* line 99, /Users/dochoa/Sites/www/source/stylesheets/base/_typography.scss */
+blockquote {
+  border-left: 2px solid #DDD;
+  color: #595959;
+  margin: 1.5em 0;
+  padding-left: 0.75em; }
+
+/* line 106, /Users/dochoa/Sites/www/source/stylesheets/base/_typography.scss */
+cite {
+  color: #737373;
+  font-style: italic; }
+  /* line 110, /Users/dochoa/Sites/www/source/stylesheets/base/_typography.scss */
+  cite:before {
+    content: "\2014 \00A0"; }
+
+/* line 115, /Users/dochoa/Sites/www/source/stylesheets/base/_typography.scss */
+.article-details h4 {
+  display: inline-block; }
+
+/* line 119, /Users/dochoa/Sites/www/source/stylesheets/base/_typography.scss */
+.article-date {
+  display: inline-block;
+  color: rgba(51, 51, 51, 0.4);
+  font-family: "EgyptianHeadline-Medium";
+  font-style: italic;
+  font-size: .9em;
+  margin-bottom: .3em;
+  margin-left: 1em; }
+
+/* line 1, /Users/dochoa/Sites/www/source/stylesheets/base/_forms.scss */
+fieldset {
+  background: #f7f7f7;
+  border: 1px solid #DDD;
+  margin: 0 0 0.75em 0;
+  padding: 1.5em; }
+
+/* line 8, /Users/dochoa/Sites/www/source/stylesheets/base/_forms.scss */
+input,
+label,
+select {
+  display: block;
+  font-family: "EgyptianText-Regular", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-size: 1em; }
+
+/* line 16, /Users/dochoa/Sites/www/source/stylesheets/base/_forms.scss */
+label {
+  font-weight: bold;
+  margin-bottom: 0.375em; }
+  /* line 20, /Users/dochoa/Sites/www/source/stylesheets/base/_forms.scss */
+  label.required:after {
+    content: "*"; }
+  /* line 24, /Users/dochoa/Sites/www/source/stylesheets/base/_forms.scss */
+  label abbr {
+    display: none; }
+
+/* line 29, /Users/dochoa/Sites/www/source/stylesheets/base/_forms.scss */
+textarea,
+input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"], textarea,
+select[multiple=multiple] {
+  -webkit-transition: border-color;
+  -moz-transition: border-color;
+  transition: border-color;
+  background-color: white;
+  border-radius: 3px;
+  border: 1px solid #DDD;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
+  font-family: "EgyptianText-Regular", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-size: 1em;
+  margin-bottom: 0.75em;
+  padding: 0.5em 0.5em;
+  width: 100%; }
+  /* line 44, /Users/dochoa/Sites/www/source/stylesheets/base/_forms.scss */
+  textarea:hover,
+  input[type="color"]:hover, input[type="date"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover, input[type="email"]:hover, input[type="month"]:hover, input[type="number"]:hover, input[type="password"]:hover, input[type="search"]:hover, input[type="tel"]:hover, input[type="text"]:hover, input[type="time"]:hover, input[type="url"]:hover, input[type="week"]:hover, textarea:hover,
+  select[multiple=multiple]:hover {
+    border-color: #c4c4c4; }
+  /* line 48, /Users/dochoa/Sites/www/source/stylesheets/base/_forms.scss */
+  textarea:focus,
+  input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="email"]:focus, input[type="month"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="time"]:focus, input[type="url"]:focus, input[type="week"]:focus, textarea:focus,
+  select[multiple=multiple]:focus {
+    border-color: #00548B;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(0, 69, 114, 0.7);
+    outline: none; }
+
+/* line 55, /Users/dochoa/Sites/www/source/stylesheets/base/_forms.scss */
+textarea {
+  resize: vertical; }
+
+/* line 59, /Users/dochoa/Sites/www/source/stylesheets/base/_forms.scss */
+input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none; }
+
+/* line 63, /Users/dochoa/Sites/www/source/stylesheets/base/_forms.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline;
+  margin-right: 0.375em; }
+
+/* line 69, /Users/dochoa/Sites/www/source/stylesheets/base/_forms.scss */
+input[type="file"] {
+  padding-bottom: 0.75em;
+  width: 100%; }
+
+/* line 74, /Users/dochoa/Sites/www/source/stylesheets/base/_forms.scss */
+select {
+  margin-bottom: 1.5em;
+  max-width: 100%;
+  width: auto; }
+
+/* line 1, /Users/dochoa/Sites/www/source/stylesheets/base/_tables.scss */
+table {
+  border-collapse: collapse;
+  margin: 0.75em 0;
+  table-layout: fixed;
+  width: 100%; }
+
+/* line 8, /Users/dochoa/Sites/www/source/stylesheets/base/_tables.scss */
+th {
+  border-bottom: 1px solid #b7b7b7;
+  font-weight: bold;
+  padding: 0.75em 0;
+  text-align: left; }
+
+/* line 15, /Users/dochoa/Sites/www/source/stylesheets/base/_tables.scss */
+td {
+  border-bottom: 1px solid #DDD;
+  padding: 0.75em 0; }
+
+/* line 20, /Users/dochoa/Sites/www/source/stylesheets/base/_tables.scss */
+tr,
+td,
+th {
+  vertical-align: middle; }
+
+/* line 1, /Users/dochoa/Sites/www/source/stylesheets/base/_lists.scss */
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+/* line 20, /Users/dochoa/Sites/www/source/stylesheets/base/_lists.scss */
+dl {
+  margin-bottom: 0.75em; }
+  /* line 23, /Users/dochoa/Sites/www/source/stylesheets/base/_lists.scss */
+  dl dt {
+    font-weight: bold;
+    margin-top: 0.75em; }
+  /* line 28, /Users/dochoa/Sites/www/source/stylesheets/base/_lists.scss */
+  dl dd {
+    margin: 0; }
+
+/* line 1, /Users/dochoa/Sites/www/source/stylesheets/base/_buttons.scss */
+button,
+input[type="submit"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  border: none;
+  cursor: pointer;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap; }
+
+/* Bitters needs to be imported before Neat */
+/* line 4, /Library/Ruby/Gems/2.0.0/gems/neat-1.7.1/app/assets/stylesheets/grid/_box-sizing.scss */
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 9, /Library/Ruby/Gems/2.0.0/gems/neat-1.7.1/app/assets/stylesheets/grid/_box-sizing.scss */
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit; }
+
+/* line 1, /Users/dochoa/Sites/www/source/stylesheets/partials/_layout.scss */
+#main {
+  max-width: 43.75em;
+  margin-left: auto;
+  margin-right: auto; }
+  /* line 20, /Library/Ruby/Gems/2.0.0/gems/bourbon-4.2.1/app/assets/stylesheets/addons/_clearfix.scss */
+  #main::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+@font-face {
+  font-family: 'EgyptianText-Regular';
+  src: url("../fonts/EgyptianText-Regular.woff") format("woff"), url("../fonts/EgyptianText-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'EgyptianText-RegularItalic';
+  src: url("../fonts/EgyptianText-RegularItalic.woff") format("woff"), url("../fonts/EgyptianText-RegularItalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic; }
+@font-face {
+  font-family: 'EgyptianText-Medium';
+  src: url("../fonts/EgyptianText-Medium.woff") format("woff"), url("../fonts/EgyptianText-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'EgyptianHeadline-Medium';
+  src: url("../fonts/EgyptianHeadline-Medium.woff") format("woff"), url("../fonts/EgyptianHeadline-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'EgyptianHeadline-Light';
+  src: url("../fonts/EgyptianHeadline-Light.woff") format("woff"), url("../fonts/EgyptianHeadline-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic; }
+@font-face {
+  font-family: 'EgyptianHeadline-Semibold-redux';
+  src: url("../fonts/EgyptianHeadline-Semibold-redux.woff") format("woff"), url("../fonts/EgyptianHeadline-Semibold-redux.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+/* line 11, /Users/dochoa/Sites/www/source/stylesheets/all.css.scss */
+article.type-system-geometric {
+  text-align: left; }
+  /* line 20, /Library/Ruby/Gems/2.0.0/gems/bourbon-4.2.1/app/assets/stylesheets/addons/_clearfix.scss */
+  article.type-system-geometric::after {
+    clear: both;
+    content: "";
+    display: table; }
+  /* line 15, /Users/dochoa/Sites/www/source/stylesheets/all.css.scss */
+  article.type-system-geometric .type {
+    border-bottom: 1px solid;
+    display: inline-block;
+    font-family: "EgyptianText-Regular", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+    font-size: .7em;
+    font-weight: 800;
+    margin-bottom: 2em;
+    padding: .3em 0;
+    text-align: left;
+    text-transform: uppercase; }
+  /* line 27, /Users/dochoa/Sites/www/source/stylesheets/all.css.scss */
+  article.type-system-geometric h1 {
+    font-family: "EgyptianHeadline-Medium";
+    font-size: 1.8em;
+    font-weight: 400;
+    margin-bottom: .5em; }
+    @media screen and (min-width: 40em) {
+      /* line 27, /Users/dochoa/Sites/www/source/stylesheets/all.css.scss */
+      article.type-system-geometric h1 {
+        font-size: 2.6em; } }
+  /* line 38, /Users/dochoa/Sites/www/source/stylesheets/all.css.scss */
+  article.type-system-geometric h2 {
+    font-family: "EgyptianHeadline-Medium";
+    font-style: italic;
+    font-size: 1.2em;
+    font-weight: 400;
+    line-height: 1.4em;
+    margin-bottom: 1.1em; }
+    @media screen and (min-width: 40em) {
+      /* line 38, /Users/dochoa/Sites/www/source/stylesheets/all.css.scss */
+      article.type-system-geometric h2 {
+        font-size: 1.3em; } }
+  /* line 51, /Users/dochoa/Sites/www/source/stylesheets/all.css.scss */
+  article.type-system-geometric code {
+    white-space: nowrap;
+    background: #F7F7F7;
+    border: 1px solid #E0E0E0;
+    border-radius: 4.5px;
+    padding: .1em .4em;
+    font-size: .7em;
+    font-style: normal; }
+  /* line 61, /Users/dochoa/Sites/www/source/stylesheets/all.css.scss */
+  article.type-system-geometric h3 {
+    font-family: "EgyptianHeadline-Medium";
+    font-size: 1.4em;
+    font-weight: 400;
+    line-height: 1.3em;
+    margin-bottom: .4em; }
+  /* line 69, /Users/dochoa/Sites/www/source/stylesheets/all.css.scss */
+  article.type-system-geometric .date {
+    color: rgba(51, 51, 51, 0.4);
+    font-family: "EgyptianHeadline-Medium";
+    font-style: italic;
+    font-size: .9em;
+    margin-bottom: .3em; }
+  /* line 77, /Users/dochoa/Sites/www/source/stylesheets/all.css.scss */
+  article.type-system-geometric p.byauthor {
+    color: rgba(51, 51, 51, 0.4);
+    font-family: "EgyptianHeadline-Medium";
+    font-size: .9em;
+    margin-bottom: .3em; }
+  /* line 84, /Users/dochoa/Sites/www/source/stylesheets/all.css.scss */
+  article.type-system-geometric p {
+    font-family: "EgyptianText-Regular", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+    line-height: 1.5em;
+    font-size: 1.05em;
+    margin-bottom: 1.5em; }
+  /* line 91, /Users/dochoa/Sites/www/source/stylesheets/all.css.scss */
+  article.type-system-geometric a.read-more {
+    display: inline-block;
+    font-family: "EgyptianText-Regular", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: .8em;
+    text-transform: uppercase;
+    margin-left: .2em;
+    position: relative; }
+    /* line 100, /Users/dochoa/Sites/www/source/stylesheets/all.css.scss */
+    article.type-system-geometric a.read-more span {
+      font-family: "EgyptianText-Regular", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+      font-style: normal;
+      position: absolute;
+      font-size: 1.5em;
+      top: -1px;
+      right: -12px; }
+  /* line 110, /Users/dochoa/Sites/www/source/stylesheets/all.css.scss */
+  article.type-system-geometric hr {
+    width: 3em; }
+  /* line 114, /Users/dochoa/Sites/www/source/stylesheets/all.css.scss */
+  article.type-system-geometric p.author {
+    font-family: "EgyptianText-Regular", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; }
+
+/* line 119, /Users/dochoa/Sites/www/source/stylesheets/all.css.scss */
+#main {
+  line-height: 1.5;
+  margin-top: 35px; }
+
+/* line 124, /Users/dochoa/Sites/www/source/stylesheets/all.css.scss */
+footer {
+  margin-top: 80px; }
+
+/* line 129, /Users/dochoa/Sites/www/source/stylesheets/all.css.scss */
+#masthead {
+  margin: 0 auto;
+  padding: 10px 0;
+  color: #57626b;
+  -webkit-font-smoothing: antialiased;
+  background-color: white;
+  font-family: "EgyptianText-Regular", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-size: 1em;
+  line-height: normal;
+  max-width: 43.75em;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out; }
+  /* line 141, /Users/dochoa/Sites/www/source/stylesheets/all.css.scss */
+  #masthead hgroup {
+    margin: 0;
+    float: left; }
+    /* line 144, /Users/dochoa/Sites/www/source/stylesheets/all.css.scss */
+    #masthead hgroup h1 {
+      font-weight: 500;
+      line-height: 1.1;
+      margin: 0;
+      font-size: 1.2em; }
+      /* line 149, /Users/dochoa/Sites/www/source/stylesheets/all.css.scss */
+      #masthead hgroup h1 a {
+        font-weight: 500;
+        cursor: pointer;
+        font-size: 1.2em;
+        color: #00548B; }
+        /* line 154, /Users/dochoa/Sites/www/source/stylesheets/all.css.scss */
+        #masthead hgroup h1 a .home {
+          color: #454e55 !important;
+          font-size: 1.1em;
+          font-weight: 500; }
+        /* line 159, /Users/dochoa/Sites/www/source/stylesheets/all.css.scss */
+        #masthead hgroup h1 a .home:hover {
+          color: #00548B !important; }
+      /* line 163, /Users/dochoa/Sites/www/source/stylesheets/all.css.scss */
+      #masthead hgroup h1 a:hover {
+        color: #245f8f; }
+      /* line 167, /Users/dochoa/Sites/www/source/stylesheets/all.css.scss */
+      #masthead hgroup h1 span a {
+        font-weight: 400;
+        font-size: .9rem;
+        color: #999; }
+      /* line 172, /Users/dochoa/Sites/www/source/stylesheets/all.css.scss */
+      #masthead hgroup h1 span a:hover {
+        color: #1D78BD; }
+
+/* line 180, /Users/dochoa/Sites/www/source/stylesheets/all.css.scss */
+#cover_wrap {
+  width: 100%;
+  padding: 1px;
+  border-bottom: 1px solid #eee; }
+
+/* line 186, /Users/dochoa/Sites/www/source/stylesheets/all.css.scss */
+#masthead #cover #headernav li.footer-only {
+  display: none; }
+
+/* line 191, /Users/dochoa/Sites/www/source/stylesheets/all.css.scss */
+#cover {
+  float: right;
+  margin-top: .21em; }
+  /* line 194, /Users/dochoa/Sites/www/source/stylesheets/all.css.scss */
+  #cover #headernav {
+    padding: 0; }
+    /* line 196, /Users/dochoa/Sites/www/source/stylesheets/all.css.scss */
+    #cover #headernav li {
+      display: inline-block;
+      margin-right: 1.7em; }
+      /* line 199, /Users/dochoa/Sites/www/source/stylesheets/all.css.scss */
+      #cover #headernav li a {
+        color: #a6a8ab;
+        font-size: .95rem;
+        font-weight: 500;
+        position: relative;
+        z-index: 1; }
+        /* line 205, /Users/dochoa/Sites/www/source/stylesheets/all.css.scss */
+        #cover #headernav li a svg {
+          margin-right: 3px;
+          margin-bottom: -1px;
+          fill: #a6a8ab !important; }
+          /* line 209, /Users/dochoa/Sites/www/source/stylesheets/all.css.scss */
+          #cover #headernav li a svg circle {
+            fill: #c0c2c4; }
+          /* line 212, /Users/dochoa/Sites/www/source/stylesheets/all.css.scss */
+          #cover #headernav li a svg path {
+            fill: #c0c2c4; }
+        /* line 217, /Users/dochoa/Sites/www/source/stylesheets/all.css.scss */
+        #cover #headernav li a .posts svg {
+          margin-bottom: -3px; }
+        /* line 222, /Users/dochoa/Sites/www/source/stylesheets/all.css.scss */
+        #cover #headernav li a .research svg {
+          margin-bottom: -3px; }
+        /* line 226, /Users/dochoa/Sites/www/source/stylesheets/all.css.scss */
+        #cover #headernav li a .selected {
+          color: #1D78BD; }
+          /* line 228, /Users/dochoa/Sites/www/source/stylesheets/all.css.scss */
+          #cover #headernav li a .selected svg {
+            fill: #1d78bd !important; }
+            /* line 230, /Users/dochoa/Sites/www/source/stylesheets/all.css.scss */
+            #cover #headernav li a .selected svg circle {
+              fill: #1D78BD; }
+            /* line 233, /Users/dochoa/Sites/www/source/stylesheets/all.css.scss */
+            #cover #headernav li a .selected svg path {
+              fill: #1D78BD; }
+        /* line 238, /Users/dochoa/Sites/www/source/stylesheets/all.css.scss */
+        #cover #headernav li a .selected:hover:before {
+          background-color: #38c;
+          width: 115%;
+          left: -.7em;
+          -webkit-transition: all 250ms cubic-bezier(0.325, 0, 0, 1);
+          -webkit-transition: all 250ms cubic-bezier(0.325, -0.075, 0, 1.65);
+          -moz-transition: all 250ms cubic-bezier(0.325, -0.075, 0, 1.65);
+          -o-transition: all 250ms cubic-bezier(0.325, -0.075, 0, 1.65);
+          transition: all 250ms cubic-bezier(0.325, -0.075, 0, 1.65); }
+        /* line 248, /Users/dochoa/Sites/www/source/stylesheets/all.css.scss */
+        #cover #headernav li a .selected:before {
+          visibility: visible;
+          -webkit-transform: scaleX(1);
+          transform: scaleX(1); }
+      /* line 254, /Users/dochoa/Sites/www/source/stylesheets/all.css.scss */
+      #cover #headernav li a:hover {
+        color: #1D78BD; }
+        /* line 256, /Users/dochoa/Sites/www/source/stylesheets/all.css.scss */
+        #cover #headernav li a:hover svg {
+          fill: #1d78bd !important; }
+          /* line 258, /Users/dochoa/Sites/www/source/stylesheets/all.css.scss */
+          #cover #headernav li a:hover svg circle {
+            fill: #1D78BD; }
+          /* line 261, /Users/dochoa/Sites/www/source/stylesheets/all.css.scss */
+          #cover #headernav li a:hover svg path {
+            fill: #1D78BD; }
+      /* line 266, /Users/dochoa/Sites/www/source/stylesheets/all.css.scss */
+      #cover #headernav li a::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        bottom: -1em;
+        padding: 0 .2em;
+        left: -.2em;
+        z-index: -1;
+        background-color: #1D78BD;
+        visibility: hidden;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transition: all 300ms cubic-bezier(0.325, 0, 0, 1);
+        -webkit-transition: all 300ms cubic-bezier(0.325, -0.075, 0, 1.65);
+        -moz-transition: all 300ms cubic-bezier(0.325, -0.075, 0, 1.65);
+        -o-transition: all 300ms cubic-bezier(0.325, -0.075, 0, 1.65);
+        transition: all 300ms cubic-bezier(0.325, -0.075, 0, 1.65); }
+      /* line 285, /Users/dochoa/Sites/www/source/stylesheets/all.css.scss */
+      #cover #headernav li a:hover:before {
+        visibility: visible;
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1); }
+    /* line 291, /Users/dochoa/Sites/www/source/stylesheets/all.css.scss */
+    #cover #headernav li:last-child {
+      margin-right: 0 !important; }
+
+/* line 298, /Users/dochoa/Sites/www/source/stylesheets/all.css.scss */
+#articleList .article {
+  margin-top: 20px; }
+/* line 301, /Users/dochoa/Sites/www/source/stylesheets/all.css.scss */
+#articleList .title {
+  font-size: 1em;
+  font-family: "EgyptianHeadline-Medium";
+  font-weight: 400;
+  line-height: 1.3em;
+  margin-bottom: .2em; }
+/* line 308, /Users/dochoa/Sites/www/source/stylesheets/all.css.scss */
+#articleList .authors {
+  color: #333;
+  font-family: "EgyptianHeadline-Medium";
+  font-size: .8em; }
+/* line 314, /Users/dochoa/Sites/www/source/stylesheets/all.css.scss */
+#articleList .journal {
+  color: rgba(51, 51, 51, 0.7);
+  font-family: "EgyptianHeadline-Medium";
+  font-size: .9em; }
+/* line 320, /Users/dochoa/Sites/www/source/stylesheets/all.css.scss */
+#articleList .doi {
+  font-size: .8em; }
+/* line 323, /Users/dochoa/Sites/www/source/stylesheets/all.css.scss */
+#articleList .author {
+  margin-right: 3px; }
+
+/* line 329, /Users/dochoa/Sites/www/source/stylesheets/all.css.scss */
+#post ul.build-list li::after, #postex .photoset .photoset-col::after, #postex .photoset .photoset-row::after, #postex ul.build-list li::after, .clearfix::after, .photoset .photoset-col::after, .photoset .photoset-row::after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+  font-size: 0; }
+
+/* line 341, /Users/dochoa/Sites/www/source/stylesheets/all.css.scss */
+section {
+  max-width: 43.75em;
+  margin-left: auto;
+  margin-right: auto; }
+  /* line 20, /Library/Ruby/Gems/2.0.0/gems/bourbon-4.2.1/app/assets/stylesheets/addons/_clearfix.scss */
+  section::after {
+    clear: both;
+    content: "";
+    display: table; }
+  /* line 343, /Users/dochoa/Sites/www/source/stylesheets/all.css.scss */
+  section aside {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 40.29137%; }
+    /* line 87, /Library/Ruby/Gems/2.0.0/gems/neat-1.7.1/app/assets/stylesheets/grid/_span-columns.scss */
+    section aside:last-child {
+      margin-right: 0; }
+  /* line 344, /Users/dochoa/Sites/www/source/stylesheets/all.css.scss */
+  section article {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 57.35098%;
+    margin-right: 0; }
+    /* line 87, /Library/Ruby/Gems/2.0.0/gems/neat-1.7.1/app/assets/stylesheets/grid/_span-columns.scss */
+    section article:last-child {
+      margin-right: 0; }
