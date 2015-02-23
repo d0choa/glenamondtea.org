@@ -1,7 +1,0 @@
-#Research interests
-
-Genome-wide techniques are opening a new age in the study of biological systems. The generation of large amounts of data makes completely necessary the research in a new generation of concepts in order to process and analyze the incoming results. The integration of all this information is even a more ambitious task in which genomic, transcriptomic, or proteomic information - among others - could be combined to obtain more robust hypothesis.
-
-As part of my post-doctoral research in [Beltrao group](http://www.ebi.ac.uk/research/beltrao) at [EMBL-EBI](http://www.ebi.ac.uk), I'm particularly interested on the evolutionary dynamics, specificity and functional relevance of post-translational modifications (PTMs). Considering the growing proteomic resource available nowadays, the comparative analysis of genome-wide modification sites can provide more insight on the specificity and evolution of the regulatory mechanisms of protein activity.
-
-During my PhD in [Florencio Pazos' group](http://csbg.cnb.csic.es/) at [CNB-CSIC](http://www.cnb.csic.es), my research was primary focused on improving computational methods for predicting protein-protein interactions based on coevolution. These methods are founded on the hypothesis that interacting or functionally related proteins tend to adapt to each other during the evolutionary process. On that way, we proposed different modifications to the standard methods in order to take advantage of the growing information on protein sequence data.
