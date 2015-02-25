@@ -2,14 +2,8 @@
   <article class="type-system-geometric">
     <p class="type"><%= current_article.metadata[:page]['type'] %></p>
     <h1><%= current_article.title %></h1>
-    <p class="byauthor">By <%= current_article.metadata[:page]['author'] %> - <span class="date"><%= current_article.date.strftime('%d-%m-%Y') %></span></p>
+    <p class="byauthor">By <%= current_article.metadata[:page]['author'] %> - <%= current_article.date.strftime('%d-%m-%Y') %></p>
     <%= yield %>
     <hr>
-    <p class="author">
-      <% current_article.tags.sort.each_with_index do |tag, i| %>
-      <% last = (i == current_article.tags.size - 1) %>
-      <%= link_to tag, tag_path(tag) %><%= "," unless last  %>
-      <% end %>
-    </p>
   </article>
 <% end %>
