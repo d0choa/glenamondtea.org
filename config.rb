@@ -43,7 +43,7 @@ activate :syntax
 
 activate :directory_indexes
 
-page "blog/feed.xml", layout: false
+page "/feed.xml", :layout => false
 
 set :markdown_engine, :redcarpet
 set :markdown, :layout_engine => :erb,
