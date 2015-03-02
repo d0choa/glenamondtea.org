@@ -113,19 +113,19 @@ About</a>
     <div id="main" role="main">
       <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Blog Name</title>
-  <subtitle>Blog subtitle</subtitle>
-  <id>http://blog.url.com/blog</id>
-  <link href="http://blog.url.com/blog"/>
-  <link href="http://blog.url.com/feed.xml" rel="self"/>
+  <title>Glenalmond Tea</title>
+  <subtitle>by David Ochoa</subtitle>
+  <id>http://glenalmondtea.org/blog</id>
+  <link href="http://glenalmondtea.org/blog"/>
+  <link href="http://glenalmondtea.org/feed.xml" rel="self"/>
   <updated>2013-01-01T00:00:00+00:00</updated>
   <author>
-    <name>Blog Author</name>
+    <name>David Ochoa</name>
   </author>
   <entry>
     <title>Testing article 2</title>
-    <link rel="alternate" href="http://blog.url.com/blog/2013/01/01/test-2/"/>
-    <id>http://blog.url.com/blog/2013/01/01/test-2/</id>
+    <link rel="alternate" href="http://glenalmondtea.org/blog/2013/01/01/test-2/"/>
+    <id>http://glenalmondtea.org/blog/2013/01/01/test-2/</id>
     <published>2013-01-01T00:00:00+00:00</published>
     <updated>2015-01-27T22:12:22+00:00</updated>
     <author>
