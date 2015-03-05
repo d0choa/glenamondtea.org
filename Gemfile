@@ -23,5 +23,7 @@ gem 'multi_xml'
 
 gem 'redcarpet', github: 'vmg/redcarpet'
 
+gem "middleman-google-analytics"
+
 # For feed.xml.builder
 gem "builder", "~> 3.0"

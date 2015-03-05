@@ -57,6 +57,9 @@ set :markdown, :layout_engine => :erb,
 helpers Helpers
 activate :middleman_orcid, :data => data
 
+activate :google_analytics do |ga|
+  ga.tracking_id = 'UA-60453205-1' # Replace with your property ID.
+end
 
 # paper = CR.doi('10.1021/ie50324a027')
 # doi = data.bibliography["orcid-activities"]["orcid-works"]["orcid-work"][1]["work-external-identifiers"]["work-external-identifier"].select{ |x| x["work-external-identifier-type"] = "DOI"}.first()["work-external-identifier-id"]["value"]
