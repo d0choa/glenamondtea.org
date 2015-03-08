@@ -2,6 +2,7 @@
   <article class="type-system-geometric">
     <p class="type"><%= current_article.metadata[:page]['type'] %></p>
     <h1><%= current_article.title %></h1>
+    <p class="standfirst"><%= current_article.metadata[:page]['standfirst'] %></p>
     <p class="byauthor">By <%= current_article.metadata[:page]['author'] %> - <%= current_article.date.strftime('%d-%m-%Y') %></p>
     <%= yield %>
     <hr>
