@@ -83,7 +83,7 @@ article.type-system-geometric {
 
   .date {
     color: $base-font-color;
-    font-family: $serif;
+    font-family: $sans-serif;
     font-style: italic;
     font-size: .9em;
     margin-bottom: .7em;
@@ -91,16 +91,16 @@ article.type-system-geometric {
 
   p.byauthor {
     color: $base-font-color;
-    font-family: $serif;
+    font-family: $sans-serif;
     font-size: .9em;
     margin-bottom: 2.5em;
   }
 
   p {
     font-family: $sans-serif;
-    line-height: 1.5em;
+    line-height: 1.8em;
     font-size: 1em;
-    margin-bottom: .5em;
+    margin-bottom: 2em;
   }
 
   a.read-more {
