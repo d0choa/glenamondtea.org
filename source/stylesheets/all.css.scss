@@ -348,12 +348,16 @@ footer{
 }
 
 #recent_posts{
+    .article-details{
+        margin-bottom:.2em;
+    }
   .posttitle{
-    font-size: $h4-font-size;
+      /* font-size: $h4-font-size; */
+      font-size: .9em;
     font-family: $serif;
     font-weight: 400;
-    line-height: 1.3em;
-    margin-bottom: .2em;
+    line-height: 1em;
+    /* margin-bottom: 2em; */
   }
   .article-date{
     margin-right:10px;

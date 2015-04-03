@@ -1,0 +1,21 @@
+<h3>Recent News</h3>
+
+<section id="recent_posts">
+  <ul>
+    <% data.news.events[0...4].each do |event| %>
+    <li>
+      <div class="article-details">
+        <span class="article-date"><%= event.date.strftime('%d-%m-%Y') %></span>
+        <% if event.has_key?("link") %>
+        <span class="posttitle"><%= link_to event.description, event.link %></span>
+        <% else %> 
+        <span class="posttitle"><%= event.description %></span>
+        <% end %>
+      </div>
+    </li>
+    <% end %>
+  </ul>
+  <!-- <div class="morewriting"> -->
+  <!--   <span><%=link_to("more writing &gt;&gt;", '/blog.html') %></span> -->
+  <!-- </div> -->
+</section>
