@@ -5,22 +5,36 @@
   <id>http://glenalmondtea.org/blog</id>
   <link href="http://glenalmondtea.org/blog"/>
   <link href="http://glenalmondtea.org/feed.xml" rel="self"/>
-  <updated>2013-01-01T00:00:00+00:00</updated>
+  <updated>2015-04-03T00:00:00+01:00</updated>
   <author>
     <name>David Ochoa</name>
   </author>
   <entry>
-    <title>Testing article 2</title>
-    <link rel="alternate" href="http://glenalmondtea.org/blog/2013/01/01/test-2/"/>
-    <id>http://glenalmondtea.org/blog/2013/01/01/test-2/</id>
-    <published>2013-01-01T00:00:00+00:00</published>
-    <updated>2015-01-27T22:12:22+00:00</updated>
+    <title>Why start a blog (at my age)</title>
+    <link rel="alternate" href="http://glenalmondtea.org/blog/2015/04/03/why_start_a_blog/"/>
+    <id>http://glenalmondtea.org/blog/2015/04/03/why_start_a_blog/</id>
+    <published>2015-04-03T00:00:00+01:00</published>
+    <updated>2015-04-03T22:07:01+01:00</updated>
     <author>
       <name>Article Author</name>
     </author>
-    <content type="html">&lt;p&gt;Testing second article. What&amp;rsquo;s going on? How the life changes when editing a second article?&lt;/p&gt;
+    <content type="html">&lt;p&gt;I would like to explain in a brief blog post the motivations behind my decision to start this blog. For the last three or four years, I&amp;rsquo;ve been reflecting on the idea of creating my own site where I could write my thoughts or explain my research in a more friendly environment. As other scientists, I had my personal website where I summarized my professional life: research interests, published articles and other merits that I thought were worth mentioning. As many others, I unsuccessfully tried to keep my &lt;a href="https://uk.linkedin.com/pub/david-ochoa/21/529/b78"&gt;LinkedIn profile&lt;/a&gt; updated, which in a sense is redundant with the personal website idea.  All this information draws a relatively flat picture of what a researcher is. In fact most of this general data about a scientist can be found without much trouble using general search engines or Pubmed.&lt;/p&gt;
 
-&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Glenalmond plate" src="../../../../../images/glenalmond.jpg" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Recently, I have felt the necessity to share certain thoughts or experiences that don&amp;rsquo;t fit in 140 characters. Don&amp;rsquo;t get me wrong, I truly think Twitter is a great tool to spread the knowledge — and I&amp;rsquo;ve been using &lt;a href="https://twitter.com/d0choa"&gt;my twitter account&lt;/a&gt; long enough to see skeptical scientists turn into fanatical activists of the bird cause. A very interesting article about this topic was recently published in &lt;a href="http://www.nature.com/naturejobs/science/articles/10.1038/nj7538-263a"&gt;naturejobs.com&lt;/a&gt;. However, twitter is not the best framework to give a different view to a recently published paper or to elaborate in others&amp;rsquo; research.&lt;/p&gt;
+
+&lt;p&gt;Another area I expect to comment on is events related with the scientific community. I&amp;rsquo;ve been working at the &lt;a href="http://www.ebi.ac.uk"&gt;EBI&lt;/a&gt; for a year and a half during which I have experienced the scientific effervescence of the &lt;a href="https://www.sanger.ac.uk/about/campus/"&gt;Genome Campus&lt;/a&gt;. Here, it&amp;rsquo;s frequent to share conversations over a cup of coffee on research that will reach the paper in a few months. Because I think the publishing system unintentionally slows down the pace of scientific discoveries, a more active blogging will be my way to contribute to a more efficient scientific community.&lt;/p&gt;
+
+&lt;p&gt;On the title of this post, I stress the idea of starting a blog &amp;ldquo;at my age&amp;rdquo;. I&amp;rsquo;m currently 30, so not really a dinosaur in scientific terms, but it&amp;rsquo;s also true that some interesting bloggers I follow started much earlier in their careers. For example, my supervisor Pedro Beltrao has been updating his &lt;a href="http://www.evocellnet.com"&gt;blog&lt;/a&gt; since more than 10 years ago. I understand writing a blog might be a huge commitment and trying to feed an audience can be time-consuming. This is not my intention. I don&amp;rsquo;t promise regular updates. I will write whenever I have something to say and I will try to keep the signal to noise ratio high. Since I don&amp;rsquo;t have a clear topic to write about, I see this blog as a way to share my ideas and not as something targeted for a given audience. &lt;/p&gt;
+
+&lt;p&gt;There are also a couple of somewhat selfish reasons why I have started this blog. As an academic career advances, more and more writing is required. Being a non-native English speaker, I sometimes find it difficult to adapt to the different registers required in scientific communication (journals, media, internet, etc.). Since I agree with the general idea that the only way to learn to write is by writing, this blog will help with that goal. Additionally, I would like to use this blog as a subtle exercise of personal branding.&lt;/p&gt;
+
+&lt;p&gt;The name of the blog took some time to decide. &lt;em&gt;Glenalmond&lt;/em&gt; refers to the name of the street where I started the blog. Pretty simple. As for tea, I recently &lt;a href="http://lifehacker.com/5697622/the-hackers-guide-to-tea"&gt;read&lt;/a&gt; that the alpha wave activity observed after tea consumption is believed to play an important role in the ability to pay attention to something and avoid distraction to other stimuli.  I liked the idea of how our habits, or in this case the beverage intake, can help us keep focused. Similarly, there are many &amp;ldquo;distracting&amp;rdquo; inputs that prevent you to seat and think. I hope this blog helps me to achieve this state of scientific &lt;em&gt;mindfulness&lt;/em&gt; .&lt;/p&gt;
+
+&lt;p&gt;From a technical point of view, I wanted a static web generator. Something simple that requires minimum maintenance and can easily be hosted.  After reading a few comparatives I finally opted by the ruby-based &lt;a href="https://middlemanapp.com"&gt;Middleman&lt;/a&gt; for the engine and &lt;a href="https://github.com"&gt;Github&lt;/a&gt; for the hosting.  I&amp;rsquo;m particularly happy with the simplicity of the result. Now I can easily write a new post using Markdown, keep it versioned and upload the result with a couple of commands. Not a single HTML need to be changed because Middleman does it for you - awesome.  &lt;/p&gt;
+
+&lt;p&gt;As for the article references, even though in my case it wouldn&amp;rsquo;t be a herculean effort to add them manually, it&amp;rsquo;s certainly a task I don&amp;rsquo;t want to spend my time on. I opted for keeping my publications updated in &lt;a href="http://orcid.org"&gt;ORCID&lt;/a&gt; and programmatically retrieve all references using their public API. Unfortunately, I realized the amount of information available in an ORCID record depends on the resource used to claim the paper. This results in a set of incomplete and inconsistent entries that are not really helpful to build a list of references. To overcome this issue I retrieve the &lt;a href="http://www.doi.org"&gt;doi&lt;/a&gt; identifier for all my papers and resolve the reference using the combination of the &lt;a href="https://github.com/ottbot/crossref"&gt;Crossref&lt;/a&gt;  and &lt;a href="https://github.com/ottbot/crossref"&gt;BibTeX&lt;/a&gt; gems. The only problem I found so far is that requires the existence of the doi, so &lt;em&gt;advance access&lt;/em&gt; publications are not listed until they get that id. In case you feel curious the code is accessible on github: &lt;a href="https://github.com/dogcaesar/glenamondtea.org"&gt;glenalmondtea.org&lt;/a&gt;. All ideas are welcome.&lt;/p&gt;
 </content>
   </entry>
 </feed>
