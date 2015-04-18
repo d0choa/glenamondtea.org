@@ -10,7 +10,7 @@ require 'lib/middleman-orcid.rb'
 require 'bibtex'
 require 'crossref'
 require "lib/helpers"
-
+require "builder"
 
 Time.zone = "London"
 
@@ -143,6 +143,13 @@ configure :build do
   activate :relative_assets
   set :relative_links, true
   set :relative_paths, true
+
+  activate :robots,
+           :rules => [
+             {:user_agent => '*',
+              :allow => %w(/)}
+           ],
+  :sitemap => "http://glenalmondtea.org/sitemap.xml"
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"

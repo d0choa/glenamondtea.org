@@ -25,5 +25,7 @@ gem 'redcarpet', github: 'vmg/redcarpet'
 
 gem "middleman-google-analytics"
 
+gem 'middleman-robots'
+
 # For feed.xml.builder
 gem "builder", "~> 3.0"
