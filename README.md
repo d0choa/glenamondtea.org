@@ -8,4 +8,4 @@ The bibliographic references on the [Research section](http://glenalmondtea.org/
 * [bibtex-ruby](https://github.com/inukshuk/bibtex-ruby)
 * [crossref](https://github.com/ottbot/crossref)
 
-The frontend uses the EgyptianText and EgyptianHeadline fonts distributed by this [repository](https://github.com/guardian/frontend-fonts) (No license specified). I'll be happy to change it if they complain with any license.
+The frontend uses the EgyptianText and EgyptianHeadline fonts distributed by this [repository](https://github.com/guardian/frontend-fonts) (No license specified). I'll be happy to change the font if complains with any license.
