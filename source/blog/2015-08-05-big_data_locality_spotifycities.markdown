@@ -1,6 +1,6 @@
 ---
 title: Finding distinctive features in complex data
-date: 2015-04-03
+date: 2015-08-05
 author: David Ochoa
 type: Opinion
 tags: opinion
