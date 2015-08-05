@@ -5,10 +5,28 @@
   <id>http://glenalmondtea.org/blog</id>
   <link href="http://glenalmondtea.org/blog"/>
   <link href="http://glenalmondtea.org/feed.xml" rel="self"/>
-  <updated>2015-04-03T00:00:00+01:00</updated>
+  <updated>2015-08-05T00:00:00+01:00</updated>
   <author>
     <name>David Ochoa</name>
   </author>
+  <entry>
+    <title>Finding distinctive features in complex data</title>
+    <link rel="alternate" href="http://glenalmondtea.org/blog/2015/08/05/big_data_locality_spotifycities/"/>
+    <id>http://glenalmondtea.org/blog/2015/08/05/big_data_locality_spotifycities/</id>
+    <published>2015-08-05T00:00:00+01:00</published>
+    <updated>2015-08-05T22:31:16+01:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;Last month, Spotify published in their &lt;a href="https://insights.spotify.com"&gt;Insights blog&lt;/a&gt; an experiment that attracted my attention. They named it &lt;em&gt;Musical Map: Cities of the World&lt;/em&gt;. The idea was to use their huge database of user habits to find music &amp;ldquo;distinctive&amp;rdquo; for each city in the world. The definition of &amp;ldquo;distinctive&amp;rdquo; would be those songs that are often listened in a given city, but not that much in other ones. This local preference on the music taste is a very intuitive concept that usually attends to cultural differences. In the case of my hometown for instance, the music preference is driven by the local Basque music, hardly understood in relatively close cities. A similar study was also performed by Spotify in 2014 when they tried to find the &lt;a href="https://insights.spotify.com/us/2014/07/01/distinctive-fourth-of-july-songs-by-state/#more-171"&gt;Distinctive Fourth of July Songs by State&lt;/a&gt;.  The interesting part about this concept is the ability to find local patterns that distinguish small communities within a much larger group.&lt;/p&gt;
+
+&lt;p&gt;There are plenty of possible applications to this knowledge on local differences. One of the most obvious is advertising. I can imagine a grocery store advertising certain products in a city where a local festivity is taking place, while offering completely different products in all nearby branches. In my case, I&amp;rsquo;ve been interested on these concepts for some time. In biological data, very frequently you want to find features that explain why a given group is different. For example, someone might wonder which are the genes driving a given tissue. Since there are many processes occurring in the cells that are not directly related with the tissue membership, you can&amp;rsquo;t simply ask which are the most differentially regulated genes. A more interesting question would be to find the genes that are regulated on these tissues, that are not regulated in any other ones.&lt;/p&gt;
+
+&lt;p&gt;How you define the question also has different implications. First of all you have to define the context in which you want to find the &amp;ldquo;distinctive&amp;rdquo; feature. In the Spotify example, the same way they find distinctive songs for cities, they could repeat the analysis in a more general context - per country - or in a more specific one - per building block. The answers to these questions could change dramatically and so could their interpretation.  Another problem comes when we define against what we want to compare. It&amp;rsquo;s not the same if we compare the songs of a city versus the rest of the world, where most populated regions can be more represented, than if we compare them against each city individually.&lt;/p&gt;
+
+&lt;p&gt;As the &lt;em&gt;so-called&lt;/em&gt; big data continues flowing many questions would require finding the commonalities between local features. From my limited knowledge in this area, there are big similarities between the approaches used in different social and scientific areas, that could potentially be transferred for a better understanding of this problem.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Why start a blog (at my age)</title>
     <link rel="alternate" href="http://glenalmondtea.org/blog/2015/04/03/why_start_a_blog/"/>
