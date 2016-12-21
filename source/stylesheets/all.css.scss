@@ -1,8 +1,8 @@
 @charset "utf-8";
 
-@import "bourbon";
+@import "bourbon/bourbon";
 @import "base/base";   /* Bitters needs to be imported before Neat */
-@import "neat";
+@import "neat/neat";
 
 @import "partials/layout";
 @import "partials/webfonts";
