@@ -8,7 +8,7 @@ gem "middleman-blog", "~> 3.5.3"
 gem "middleman-gh-pages"
 
 gem 'bitters'
-gem 'bourbon'
+gem 'bourbon', "~>4.2.7"
 gem 'neat'
 
 gem 'faraday'
