@@ -38,8 +38,10 @@ class Profile
     # Construct bibliography based on biblio info from  profile
     @works = Bibliography.new
     if result["orcid-activities"] and result["orcid-activities"]["orcid-works"]["orcid-work"]
-      result["orcid-activities"]["orcid-works"]["orcid-work"].each do |work| 
-        @works << Work.new(work, reversed_name) 
+      result["orcid-activities"]["orcid-works"]["orcid-work"].each do |work|
+        if work["work-type"] == "JOURNAL_ARTICLE"
+          @works << Work.new(work, reversed_name)
+        end
       end
     end
     

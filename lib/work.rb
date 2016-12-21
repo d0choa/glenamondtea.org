@@ -57,29 +57,34 @@ class Work < BibTeX::Entry
       if work["publication-date"]["year"]["value"]
         entry.year = work["publication-date"]["year"]["value"]
       end
-      if record["journal"]["journal_issue"]
+      if (defined?(record["journal"]["journal_issue"]))
         entry.volume = record["journal"]["journal_issue"]["journal_volume"]["volume"]      
         entry.number = record["journal"]["journal_issue"]["issue"]
       end      
-      
-      if record["journal"]["journal_article"]["pages"]
-        if record["journal"]["journal_article"]["pages"]["last_page"]
-          entry.pages = record["journal"]["journal_article"]["pages"]["first_page"] + "-" + record["journal"]["journal_article"]["pages"]["last_page"]
-        else
-          entry.page = record["journal"]["journal_article"]["pages"]["first_page"]
+
+      if (defined?(record["journal"]["journal_article"]["pages"]))
+        if(record["journal"]["journal_article"]["pages"].to_s != "")
+          if(record["journal"]["journal_article"]["pages"]["last_page"].to_s != "")
+            entry.pages = record["journal"]["journal_article"]["pages"]["first_page"] + "-" + record["journal"]["journal_article"]["pages"]["last_page"]
+          else
+            entry.page = record["journal"]["journal_article"]["pages"]["first_page"]
+          end
         end
       end
       
-      
       @contributors = Array.new
-      record["journal"]["journal_article"]["contributors"]["person_name"].each do |contributor|
-        thisauthor =  contributor["surname"] + ", " + contributor["given_name"]
-        @contributors.push(thisauthor)
+      if(defined?(record["journal"]["journal_article"]["contributors"]))
+        record["journal"]["journal_article"]["contributors"]["person_name"].each do |contributor|
+          thisauthor =  contributor["surname"] + ", " + contributor["given_name"]
+          @contributors.push(thisauthor)
+        end
       end
       entry.author = contributors.join(" and ")
-      
-      entry.title = record["journal"]["journal_article"]["titles"]["title"]
-      entry.journal = record["journal"]["journal_metadata"]["full_title"]
+
+      if(defined?(record["journal"]["journal_article"]["titles"]["title"]))
+        entry.title = record["journal"]["journal_article"]["titles"]["title"]
+        entry.journal = record["journal"]["journal_metadata"]["full_title"]
+      end
       super(entry.fields)
     else
       if work["work-citation"] and work["work-citation"]["work-citation-type"].upcase == "BIBTEX"
@@ -106,7 +111,7 @@ class Work < BibTeX::Entry
         type = WORK_TYPES.key(work["work-type"]) || :misc
         title = work["work-title"] ? work["work-title"]["title"]["value"] : "No title"
         super({:type => type,
-        	     :title => title,
+               :title => title,
                :author => author})
 
         # Optional attributes
@@ -123,7 +128,6 @@ class Work < BibTeX::Entry
     if self.url.nil? and !self.doi.nil? 
       self["url"] = Addressable::URI.escape "http://dx.doi.org/#{doi}"
     end
-           
   end
 
   # def hash
