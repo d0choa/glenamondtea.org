@@ -1,9 +1,12 @@
 events:
+  - date: 2016-12-1
+    description: "'An atlas of human kinase regulation' published in Molecular Systems Biology"
+    link: http://dx.doi.org/10.15252/msb.20167295
+  - date: 2015-02-25
+    description: "'Detection of significant protein co-evolution' published in Bioinformatics"
+    link: http://dx.doi.org/10.1093/bioinformatics/btv102
   - date: 2015-04-01
     description: "New website launched"
   - date: 2015-03-26
     description: "'Kinase‐two‐hybrid: towards the conditional interactome' N&V published in MSB"
     link: http://dx.doi.org/10.15252/msb.20156107
-  - date: 2015-02-25
-    description: "'Detection of significant protein co-evolution' published in Bioinformatics"
-    link: http://dx.doi.org/10.1093/bioinformatics/btv102
